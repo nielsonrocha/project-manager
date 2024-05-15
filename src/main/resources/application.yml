@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: portfolio_user
+    url: jdbc:postgresql://localhost:5432/portfolio
+    password: password
+  jpa:
+    open-in-view: false
+    show-sql: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
